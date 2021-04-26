@@ -109,46 +109,113 @@ header{
 main{
   background-color: $color-main;
 
-  .container{
-    @include my_container;
-  }
+  section.page_body_top{
 
-  h3{
-    text-align: center;
-    padding: 10px;
-  }
-
-  .row{
-    display:flex;
-  }
-
-  .card{
-    @include my_card_one;
-    background-color: #fffff7;
-
-    img{
-      max-width: 100%;
+    .container{
+      @include my_container;
     }
 
-    .card_bottom{
-      height: 150px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
+    h3{
+      text-align: center;
       padding: 10px;
+    }
 
-      p{
-        font-size: 18px;
+    .row{
+      display:flex;
+    }
+
+    .card{
+      @include my_card_one;
+      background-color: #fffff7;
+
+      img{
+        max-width: 100%;
       }
 
-      a{
-        text-decoration: none;
+      .card_bottom{
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10px;
+
+        p{
+          font-size: 18px;
+        }
+
+        a{
+          text-decoration: none;
+        }
+      }
+
+    }
+
+    .card:nth-of-type(2){
+      margin: 0 20px;
+    }
+
+  } //end of the first section in the main
+
+  section.page_body_bottom{
+    padding: 80px 0;
+    .container{
+      @include my_container;
+    }
+
+    .row{
+      display: flex;
+      img{
+        width: 100%;
+        max-height: 100%;
+
+      }
+
+      .card_two{
+        @include my_card_two;
+      }
+
+      .card_two.first_left{
+        background-color: #423189;
+        @include cardWhitTex;
+      }
+
+
+      .card_two.first_right{
+        background-image: url('img/wacom-painter.jpg');
+        background-size: cover;
+
+        img{
+          max-width: 70%;
+        }
+
+      }
+
+      .card_two.snd_right{
+        background-color: #484f51;
+        color:#fff;
+        @include cardWhitTex;
+      }
+
+      .card_two.snd_left{
+
+        img{
+          width: 100%;
+          max-height: 100%;
+        }
+      }
+
+      .card_two.third_left{
+        @include cardWhitTex;
+        background-color: #3b5998;
+      }
+
+      .card_two.third_right{
+        background-color: #2F353B;
+        color: #fff;
+
+
       }
     }
 
-  }
-
-  .card:nth-of-type(2){
-    margin: 0 20px;
   }
 }

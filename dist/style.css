@@ -84,39 +84,143 @@ header a {
 main {
   background-color: lightgrey;
 }
-main .container {
+main section.page_body_top .container {
   width: 75%;
   margin: 0 auto;
   padding: 20px 0;
 }
-main h3 {
+main section.page_body_top h3 {
   text-align: center;
   padding: 10px;
 }
-main .row {
+main section.page_body_top .row {
   display: flex;
 }
-main .card {
+main section.page_body_top .card {
   width: calc(100% / 3 - 20px);
   height: auto;
   background-color: #fffff7;
 }
-main .card img {
+main section.page_body_top .card img {
   max-width: 100%;
 }
-main .card .card_bottom {
+main section.page_body_top .card .card_bottom {
   height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 10px;
 }
-main .card .card_bottom p {
+main section.page_body_top .card .card_bottom p {
   font-size: 18px;
 }
-main .card .card_bottom a {
+main section.page_body_top .card .card_bottom a {
   text-decoration: none;
 }
-main .card:nth-of-type(2) {
+main section.page_body_top .card:nth-of-type(2) {
   margin: 0 20px;
+}
+main section.page_body_bottom {
+  padding: 80px 0;
+}
+main section.page_body_bottom .container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+main section.page_body_bottom .row {
+  display: flex;
+}
+main section.page_body_bottom .row img {
+  width: 100%;
+  max-height: 100%;
+}
+main section.page_body_bottom .row .card_two {
+  width: calc(100% / 2);
+  height: 350px;
+}
+main section.page_body_bottom .row .card_two.first_left {
+  background-color: #423189;
+  color: #fff;
+  padding: 60px;
+}
+main section.page_body_bottom .row .card_two.first_left h3 {
+  text-align: left;
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 20px;
+  padding: 0;
+}
+main section.page_body_bottom .row .card_two.first_left button {
+  padding: 10px 15px;
+  text-decoration: none;
+  border: none;
+  background-color: #fff;
+  margin-top: 30px;
+}
+main section.page_body_bottom .row .card_two.first_left p {
+  font-size: 18px;
+  margin-top: 30px;
+}
+main section.page_body_bottom .row .card_two.first_right {
+  background-image: url("img/wacom-painter.jpg");
+  background-size: cover;
+}
+main section.page_body_bottom .row .card_two.first_right img {
+  max-width: 70%;
+}
+main section.page_body_bottom .row .card_two.snd_right {
+  background-color: #484f51;
+  color: #fff;
+  color: #fff;
+  padding: 60px;
+}
+main section.page_body_bottom .row .card_two.snd_right h3 {
+  text-align: left;
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 20px;
+  padding: 0;
+}
+main section.page_body_bottom .row .card_two.snd_right button {
+  padding: 10px 15px;
+  text-decoration: none;
+  border: none;
+  background-color: #fff;
+  margin-top: 30px;
+}
+main section.page_body_bottom .row .card_two.snd_right p {
+  font-size: 18px;
+  margin-top: 30px;
+}
+main section.page_body_bottom .row .card_two.snd_left img {
+  width: 100%;
+  max-height: 100%;
+}
+main section.page_body_bottom .row .card_two.third_left {
+  color: #fff;
+  padding: 60px;
+  background-color: #3b5998;
+}
+main section.page_body_bottom .row .card_two.third_left h3 {
+  text-align: left;
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 20px;
+  padding: 0;
+}
+main section.page_body_bottom .row .card_two.third_left button {
+  padding: 10px 15px;
+  text-decoration: none;
+  border: none;
+  background-color: #fff;
+  margin-top: 30px;
+}
+main section.page_body_bottom .row .card_two.third_left p {
+  font-size: 18px;
+  margin-top: 30px;
+}
+main section.page_body_bottom .row .card_two.third_right {
+  background-color: #2F353B;
+  color: #fff;
 }
