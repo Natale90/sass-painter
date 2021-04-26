@@ -1,0 +1,154 @@
+@import 'partials/common';
+@import 'partials/variables';
+
+
+
+
+
+header{
+  background-color: #000;
+  color: $info-color;
+
+  .container{
+    @include my_container;
+  }
+
+  .info{
+
+    ul{
+      display: flex;
+      list-style-type: none;
+      justify-content: flex-end;
+    }
+
+    li{
+      margin-left: 30px;
+    }
+
+  }
+
+  .navbar{
+
+    display: flex;
+    align-items: baseline;
+
+    ul{
+      display: flex;
+      list-style-type: none;
+    }
+
+    li{
+      margin-left: 45px;
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: $info-color;
+  }
+}
+
+.jumbotron{
+  height: 500px;
+  padding: 50px 0;
+  background-image: url('img/bg-painter-home.jpg');
+  background-position: center;
+  background-size: cover;
+
+  .container{
+    @include my_container;
+  }
+
+  img{
+    width: 300px;
+    height: auto;
+  }
+
+  .jumbo-title{
+    margin-bottom: 40px;
+
+    p{
+      margin-top: 10px;
+    }
+  }
+
+  .jumbo-btn{
+    div{
+      display: inline-block;
+    }
+
+    .btn{
+      margin: 40px 20px 0 0;
+    }
+
+    .btn.one{
+      background-color: black;
+      a{
+        color: white;
+      }
+    }
+
+    .btn.two{
+      a{
+
+        color:black;
+      }
+    }
+
+    a{
+      @include btn;
+      display: inline-block;
+    }
+  }
+
+
+}
+
+// ------------------------MAIN SECTION IN THE PAGE----------------------------
+
+main{
+  background-color: $color-main;
+
+  .container{
+    @include my_container;
+  }
+
+  h3{
+    text-align: center;
+    padding: 10px;
+  }
+
+  .row{
+    display:flex;
+  }
+
+  .card{
+    @include my_card_one;
+    background-color: #fffff7;
+
+    img{
+      max-width: 100%;
+    }
+
+    .card_bottom{
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 10px;
+
+      p{
+        font-size: 18px;
+      }
+
+      a{
+        text-decoration: none;
+      }
+    }
+
+  }
+
+  .card:nth-of-type(2){
+    margin: 0 20px;
+  }
+}

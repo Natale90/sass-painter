@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+}
+header .container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+header .info ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+header .info li {
+  margin-left: 30px;
+}
+header .navbar {
+  display: flex;
+  align-items: baseline;
+}
+header .navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+header .navbar li {
+  margin-left: 45px;
+}
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.jumbotron {
+  height: 500px;
+  padding: 50px 0;
+  background-image: url("img/bg-painter-home.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.jumbotron .container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.jumbotron img {
+  width: 300px;
+  height: auto;
+}
+.jumbotron .jumbo-title {
+  margin-bottom: 40px;
+}
+.jumbotron .jumbo-title p {
+  margin-top: 10px;
+}
+.jumbotron .jumbo-btn div {
+  display: inline-block;
+}
+.jumbotron .jumbo-btn .btn {
+  margin: 40px 20px 0 0;
+}
+.jumbotron .jumbo-btn .btn.one {
+  background-color: black;
+}
+.jumbotron .jumbo-btn .btn.one a {
+  color: white;
+}
+.jumbotron .jumbo-btn .btn.two a {
+  color: black;
+}
+.jumbotron .jumbo-btn a {
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 3px solid black;
+  display: inline-block;
+}
+
+main {
+  background-color: lightgrey;
+}
+main .container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+main h3 {
+  text-align: center;
+  padding: 10px;
+}
+main .row {
+  display: flex;
+}
+main .card {
+  width: calc(100% / 3 - 20px);
+  height: auto;
+  background-color: #fffff7;
+}
+main .card img {
+  max-width: 100%;
+}
+main .card .card_bottom {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+main .card .card_bottom p {
+  font-size: 18px;
+}
+main .card .card_bottom a {
+  text-decoration: none;
+}
+main .card:nth-of-type(2) {
+  margin: 0 20px;
+}

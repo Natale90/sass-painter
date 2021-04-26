@@ -1,0 +1,28 @@
+$color-main: lightgrey;
+$icons-color: #3b5998;
+$info-color: #fff;
+
+@mixin my_card_one{
+  width: calc(100% / 3 - 20px);
+  height: auto;
+  
+}
+
+@mixin my_card_two{
+  width: calc(100% / 2);
+  height: auto;
+  border:1px solid black;
+}
+
+@mixin my_container{
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+
+@mixin btn{
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 3px solid black;
+}
